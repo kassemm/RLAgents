@@ -119,7 +119,7 @@ class AbstractDQNAgent(AbstractStochasticAgent, ABC):
         """
         values, actions = self.get_batch_state_values([state])
         return values[0], actions[0]
-
+ 
     def get_state_action_values(self, state):
         """
         :param state: s, an environment state
